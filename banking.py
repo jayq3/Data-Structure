@@ -1,6 +1,32 @@
 from linked_list import LinkedList 
 from customer import Customer 
+from 
+from 
+from
+from
+from
+
+def Main_Menu():
+ print("Main Menu", end="\n\n")
+ print("1. Go to Customer menu")
+ print("2. Go to Loan manager menu")
+ print ("0. Exit")
  
+ def Customer_Menu():
+  print("Customer's Menu", end="\n\n")
+  print("1. Make a savings account depoist")
+  print("2. View savings account balance")
+  print("3. Make a loan payment")
+  print("4. View loan balance")
+  print("0. Go to Main menu")
+  
+        
+  def Loan_Manager_Menu():
+   print("Loan Manager Menu", end="\n\n")
+   print("1. Manage customer records")
+   print("2. Create a loan application")
+   print("0. Go to Main menu")
+   
 def print_menu(): 
     print("Manage Customer Records", end="\n\n") 
     print("1. Add a customer record") 
@@ -52,7 +78,7 @@ def update_customer_record():
  
 # create the linked list 
 customers = LinkedList() 
- 
+application=BankLoanApplication()
 # accept input from the menu 
 while True: 
     try: 
