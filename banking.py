@@ -1,17 +1,26 @@
 from linked_list import LinkedList 
 from customer import Customer 
-from 
-from 
-from
-from
-from
+from bank_loan_application import BankLoanApplication 
+from loan_transaction import LoanTransaction
+from loan_payment_accountpy import LoanPaymentAccountpy
+from loan_account import LoanAccount
+from savings_account import SavingsAccount
 
 def Main_Menu():
  print("Main Menu", end="\n\n")
  print("1. Go to Customer menu")
  print("2. Go to Loan manager menu")
  print ("0. Exit")
- 
+
+ choice = input(">>")
+
+ if choice == '1':
+  Customer_Menu()
+ elif choice == '2':
+  Loan_Manager_Menu()
+ elif choice =='0':
+  return 
+  
  def Customer_Menu():
   print("Customer's Menu", end="\n\n")
   print("1. Make a savings account depoist")
