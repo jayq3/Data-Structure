@@ -1,40 +1,40 @@
 from linked_list import LinkedList 
 from customer import Customer 
 from bank_loan_application import BankLoanApplication 
-from loan_transaction import LoanTransaction
-from loan_payment_accountpy import LoanPaymentAccountpy
+from loan_transaction import Loan_Transaction
+from loan_payment_account import Loan_Payment_Account
 from loan_account import LoanAccount
-from savings_account import SavingsAccount
+from savings_account import Savings_Account
 
 def Main_Menu():
- print("Main Menu", end="\n\n")
- print("1. Go to Customer menu")
- print("2. Go to Loan manager menu")
- print ("0. Exit")
+   print("Main Menu", end="\n\n")
+   print("1. Go to Customer menu")
+   print("2. Go to Loan manager menu")
+   print ("0. Exit")
 
- choice = input(">>")
+   choice = input(">>")
 
- if choice == '1':
-  Customer_Menu()
- elif choice == '2':
-  Loan_Manager_Menu()
- elif choice =='0':
-  return 
+   if choice == '1':
+       Customer_Menu()
+   elif choice == '2':
+       Loan_Manager_Menu()
+   elif choice =='0':
+       return
   
- def Customer_Menu():
-  print("Customer's Menu", end="\n\n")
-  print("1. Make a savings account depoist")
-  print("2. View savings account balance")
-  print("3. Make a loan payment")
-  print("4. View loan balance")
-  print("0. Go to Main menu")
+def Customer_Menu():
+    print("Customer's Menu", end="\n\n")
+    print("1. Make a savings account depoist")
+    print("2. View savings account balance")
+    print("3. Make a loan payment")
+    print("4. View loan balance")
+    print("0. Go to Main menu")
   
         
-  def Loan_Manager_Menu():
-   print("Loan Manager Menu", end="\n\n")
-   print("1. Manage customer records")
-   print("2. Create a loan application")
-   print("0. Go to Main menu")
+def Loan_Manager_Menu():
+    print("Loan Manager Menu", end="\n\n")
+    print("1. Manage customer records")
+    print("2. Create a loan application")
+    print("0. Go to Main menu")
    
 def print_menu(): 
     print("Manage Customer Records", end="\n\n") 
@@ -84,7 +84,6 @@ def update_customer_record():
         my_customer.address = new_address 
         new_mobile_number = input("Enter new mobile number: ") 
         my_customer.mobile_number = new_mobile_number 
- 
 # create the linked list 
 customers = LinkedList() 
 application=BankLoanApplication()
